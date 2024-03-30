@@ -1,6 +1,6 @@
 # [Automatic Surround Camera Calibration Method in Road Scene forSelf-driving Car ](https://arxiv.org/abs/2305.16840)
 
-_February 2024_
+_March 2024_
 
 tl;dr: A method for introducing robust automatic multi-camera (pinhole or fisheye camera) calibration and refinement in road scenes
 
@@ -17,6 +17,7 @@ Describe the overall impression of the paper.
 - A rotation and translation up to a fixed pixel step is used to compute the photometric loss value in a way similar to gradient descent, but instead of giving a search range based on the gradient, so it is able to avoid falling into local optima
 
 #### Notes
+- [code](https://github.com/OpenCalib/SurroundCameraCalib)
 - The reasons for the value of the fixed threshold, and how much of an effect modifying the parameter has, are not given in the text;
 - A key to automatic calibration is real-time, but no experimental data on the time-consuming nature of the algorithm is given in the text;
 - The effectiveness of the algorithm is debatable for the consensus region where the texture features are not obvious or less textured or for extreme road conditions
